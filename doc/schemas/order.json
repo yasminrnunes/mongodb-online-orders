@@ -1,0 +1,14 @@
+{
+  "id": 1,
+  "customer_id": 12345,
+  "order_date": "2023-10-01",
+  "products": [
+    {
+      "category_name": "Electronics",
+      "product_id": "E123",
+      "product_name": "Smartphone",
+      "product_quantity": 6,
+      "product_unit_value": 10.7
+    }
+  ]
+}

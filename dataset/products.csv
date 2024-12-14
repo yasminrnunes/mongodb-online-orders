@@ -1,0 +1,51 @@
+id;name;category_id
+1;Laptop;1
+2;Smartphone;1
+3;Headphones;1
+4;Tablet;1
+5;Camera;1
+6;E-book Reader;2
+7;Cookbook;2
+8;Novel;2
+9;Textbook;2
+10;Blender;3
+11;Coffee Maker;3
+12;Microwave;3
+13;Vacuum Cleaner;3
+14;Soccer Ball;4
+15;Tennis Racket;4
+16;Basketball;4
+17;Yoga Mat;4
+18;Running Shoes;4
+19;T-shirt;5
+20;Jeans;5
+21;Jacket;5
+22;Sneakers;5
+23;Dress;5
+24;Smartwatch;1
+25;Monitor;1
+26;Keyboard;1
+27;Mouse;1
+28;Printer;1
+29;Fiction Book;2
+30;Non-fiction Book;2
+31;Mystery Book;2
+32;Science Book;2
+33;Toaster;3
+34;Mixer;3
+35;Air Fryer;3
+36;Grill;3
+37;Dumbbells;4
+38;Treadmill;4
+39;Exercise Bike;4
+40;Golf Clubs;4
+41;Hat;5
+42;Scarf;5
+43;Gloves;5
+44;Socks;5
+45;Belt;5
+46;Smart TV;1
+47;Gaming Console;1
+48;Router;1
+49;External Hard Drive;1
+50;Webcam;1
