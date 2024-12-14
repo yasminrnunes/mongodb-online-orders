@@ -93,7 +93,7 @@ def barchart_top_customers():
 
     plt.xlabel("Customer id")
     plt.ylabel("Total sales")
-    plt.title("Top 5 customers by total sales")
+    plt.title("Top 5 customers by total sales in 2024")
     plt.yticks([])
 
     for spine in plt.gca().spines.values():
@@ -110,19 +110,19 @@ def table_top_products_by_category():
         {"$addFields": {"total_quantity": "$products.product_quantity"}},
         {
             "$lookup": {
-                "from": "products",  # Nome da coleção de produtos
-                "localField": "products.product_id",  # Campo na coleção orders
-                "foreignField": "id",  # Campo na coleção products
-                "as": "product_info",  # Nome do campo de saída (que conterá as informações do produto)
+                "from": "products",  
+                "localField": "products.product_id",  
+                "foreignField": "id",  
+                "as": "product_info",  
             }
         },
         {"$unwind": "$product_info"},
         {
             "$lookup": {
-                "from": "categories",  # Name of the 'categories' collection
-                "localField": "product_info.category_id",  # Field in 'product_info' (category_id)
-                "foreignField": "id",  # Field in 'categories' collection
-                "as": "category_info",  # The resulting array will contain category info
+                "from": "categories",  
+                "localField": "product_info.category_id",  
+                "foreignField": "id",  
+                "as": "category_info",  
             }
         },
         {"$unwind": "$category_info"},
@@ -150,10 +150,10 @@ def table_top_products_by_category():
                 "output": {"rank": {"$rank": {}}},
             }
         },
-        {"$match": {"rank": {"$lte": 3}}},  # Include only ranks 1 to 3
+        {"$match": {"rank": {"$lte": 3}}},  
         {
             "$project": {
-                "_id": 0,  # Exclude the default _id field
+                "_id": 0,  
                 "product_name": 1,
                 "category_name": 1,
                 "total_quantity": 1,
